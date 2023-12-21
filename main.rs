@@ -12,7 +12,7 @@ fn main() {
 
     dotenv().ok();
 
-    //import creds from .env
+    //import creds from .env (If I were to remove .env I'd have to comment these (should remember but who knows, perhaps my descent into total and utter insanity might go to fast?))
     let smtp_username = env::var("SMTP_USERNAME").expect("SMTP_USERNAME not set in .env");
     let smtp_password = env::var("SMTP_PASSWORD").expect("SMTP_PASSWORD not set in .env");
     let email_to = env::var("EMAIL_TO").expect("EMAIL_TO not (correctly) set in .env")
