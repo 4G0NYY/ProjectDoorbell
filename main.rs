@@ -15,6 +15,7 @@ fn main() {
     //import creds from .env
     let smtp_username = env::var("SMTP_USERNAME").expect("SMTP_USERNAME not set in .env");
     let smtp_password = env::var("SMTP_PASSWORD").expect("SMTP_PASSWORD not set in .env");
+    let email_to = env::var("EMAIL_TO").expect("EMAIL_TO not (correctly) set in .env")
 
     // If I decide I'm too lazy to use a .env, for example cause IT'S ONLY FOR ONE PERSON AND I'M USING A DEAD MAILBOX EITHER WAY
     //let smtp_username = "your_email@gmail.com";
